@@ -13,9 +13,10 @@ var config = {
 firebase.initializeApp(config);
 
 const database = firebase.database();
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
 
-export { firebase, database as default}
+export { firebase, googleAuthProvider, database as default}
 
 // database.ref('expenses').on('value', (snapshots) => {
 //     const expenses = [];
