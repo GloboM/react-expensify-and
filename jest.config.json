@@ -1,5 +1,11 @@
+
 {
   "snapshotSerializers": [
     "enzyme-to-json/serializer"
+  ],
+  "comment ": "this part is in order for our firebase configurattion to be working in the test mode",
+  "setupFiles": [
+    "<rootDir>/src/tests/setupTests.js"
   ]
 }
+
